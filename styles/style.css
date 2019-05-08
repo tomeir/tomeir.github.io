@@ -15,7 +15,7 @@ p, li{
 }
 
 html{
-    background-color: #2FDEB5;
+    background-color: rgba(73, 4, 94, 0.87);
   }
 
   body{
@@ -30,7 +30,7 @@ html{
   h1{
     margin: 0;
     padding: 20px 0;    
-    color: #2FDEB5;
+    color: rgb(236, 217, 47);
     text-shadow: 3px 3px 1px black;
   }
 
@@ -50,4 +50,15 @@ html{
     display: block;
     margin: 0 auto;
     width: 600px;
+  }
+
+  button{
+  background-color: rgb(236, 217, 47);; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
   }
