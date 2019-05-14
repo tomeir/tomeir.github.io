@@ -1,36 +1,17 @@
 <!DOCTYPE html>
 <html>
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <head>
     <meta charset="utf-8">
     <title>Pure Au Interactive</title>
     <link href="styles/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
   </head>
-
   <body>
-      <div ng-app="myApp" ng-controller="myCtrl">
-
-          First Name: <input type="text" ng-model="firstName"><br>
-          Middle Name: <input type="text" ng-model="middleName"><br>
-          Last Name: <input type="text" ng-model="lastName"><br>
-          <br>
-          Full Name: {{firstName + " " + middleName + " " + lastName}}
-          
-          </div>
-          
-          <script>
-          var app = angular.module('myApp', []);
-          app.controller('myCtrl', function($scope) {
-            $scope.firstName = "John";
-            $scope.middleName = "Peter";
-            $scope.lastName = "Doe";
-          });
-          </script>
-        
-    <h1>Tutorial Site</h1>
+    <h1>Pure Au Interactive</h1>
+    <img src="images/gold-ingots.jpeg" alt="Gold ingots">
+    <button><a href="projects/projects.html"> Projects</a></button>
+    <button><a href="about/about.html"> About</a></button>
+    <button><a href="projects/projects.html"> Test</a></button>
     <script src="scripts/main.js"></script>
   </body>
-
 </html>
