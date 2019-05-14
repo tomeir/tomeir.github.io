@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <head>
     <meta charset="utf-8">
     <title>Pure Au Interactive</title>
@@ -7,11 +8,12 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
   </head>
   <body>
+      <div ng-app="">
+          <p>Name : <input type="text" ng-model="name"></p>
+          <h1>Hello {{name}}</h1>
+        </div>
+        
     <h1>Pure Au Interactive</h1>
-    <img src="images/gold-ingots.jpeg" alt="Gold ingots">
-    <button><a href="projects/projects.html"> Projects</a></button>
-    <button><a href="about/about.html"> About</a></button>
-    <button><a href="projects/projects.html"> Test</a></button>
     <script src="scripts/main.js"></script>
   </body>
 </html>
