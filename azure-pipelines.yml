@@ -1,6 +1,0 @@
-steps:
-- bash: |
-    git push --prune https://GitHub@github.com/tomeir/tomeir.github.io.git \
-    +refs/remotes/origin/*:refs/heads/* +refs/tags/* 
-  displayName: 'Copy to GitHub'
-  condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
