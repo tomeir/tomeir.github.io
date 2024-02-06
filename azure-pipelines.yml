@@ -1,17 +1,6 @@
-# HTML
-# Archive your static HTML project and save it with the build record.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
-trigger:
-- master
-
-pool:
-  vmImage: ubuntu-latest
-
 steps:
-- task: ArchiveFiles@2
-  inputs:
-    rootFolderOrFile: '$(build.sourcesDirectory)'
-    includeRootFolder: false
-- task: PublishBuildArtifacts@1
+- bash: |
+    git push --prune https://GitHub@github.com/tomeir/tomeir.github.io.git \
+    +refs/remotes/origin/*:refs/heads/* +refs/tags/* 
+  displayName: 'Copy to GitHub'
+  condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
